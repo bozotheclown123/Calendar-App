@@ -1,8 +1,8 @@
 # Calendar App
 The calendar application allows events to be scheduled on specific days. A calendar is defined by the following structs:
 
-typedef struct event {
-char *name;
+typedef struct event { <br />
+char *name; <br />
 int start_time, duration_minutes;
 void *info;
 struct event *next;
