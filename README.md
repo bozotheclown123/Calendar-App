@@ -3,17 +3,17 @@ The calendar application allows events to be scheduled on specific days. A calen
 
 typedef struct event { <br />
 char *name; <br />
-int start_time, duration_minutes;
-void *info;
-struct event *next;
-} Event;
+int start_time, duration_minutes; <br />
+void *info; <br />
+struct event *next; <br />
+} Event; 
 
-typedef struct calendar {
-char *name;
-Event **events;
-int days, total_events;
-int (*comp_func) (const void *ptr1, const void *ptr2);
-void (*free_info_func) (void *ptr);
+typedef struct calendar { <br />
+char *name; <br />
+Event **events; <br />
+int days, total_events; <br />
+int (*comp_func) (const void *ptr1, const void *ptr2); <br />
+void (*free_info_func) (void *ptr); <br />
 } Calendar;
 
 An Event struct represents an event. The fields of the Event struct maintain a pointer to the event’s name, the
